@@ -1,17 +1,17 @@
 const mongoose = require('mongoose')
 
 const fileSchema = new mongoose.Schema({
-  path: {
+  url: {
+    type: String,
+    required: true,
+  },
+  public_id: {
     type: String,
     required: true,
   },
   originalName: {
     type: String,
     required: true,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
   },
 })
 
